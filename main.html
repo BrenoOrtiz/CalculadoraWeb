@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script defer type="text/javascript" src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="all">
+        <div class="display">
+        <span id="calculo"></span>
+        <span id="resultado"></span>
+        </div>
+        <div class="buttons-container">
+            <button class="btn btn-operator" onclick="limpar()">AC</button>
+            <button class="btn btn-operator" onclick="mudar_sinal()">+/-</button>
+            <button class="btn btn-operator" value="%" onclick="user_input_operator(this)">%</button>
+            <button class="btn btn-operator" value="/" onclick="user_input_operator(this)">/</button>
+            <button class="btn btn-digit" value="7" onclick="user_input_digit(this)">7</button>
+            <button class="btn btn-digit" value="8" onclick="user_input_digit(this)">8</button>
+            <button class="btn btn-digit" value="9" onclick="user_input_digit(this)">9</button>
+            <button class="btn btn-operator" value="*" onclick="user_input_operator(this)">x</button>
+            <button class="btn btn-digit" value="4" onclick="user_input_digit(this)">4</button>
+            <button class="btn btn-digit" value="5" onclick="user_input_digit(this)">5</button>
+            <button class="btn btn-digit" value="6" onclick="user_input_digit(this)">6</button>
+            <button class="btn btn-operator" value="-" onclick="user_input_operator(this)">-</button>
+            <button class="btn btn-digit" value="1" onclick="user_input_digit(this)">1</button>
+            <button class="btn btn-digit" value="2" onclick="user_input_digit(this)">2</button>
+            <button class="btn btn-digit" value="3" onclick="user_input_digit(this)">3</button>
+            <button class="btn btn-operator" value="+" onclick="user_input_operator(this)">+</button>
+            <button class="btn btn-digit" value="0" onclick="user_input_digit(this)">0</button>
+            <button class="btn btn-digit" value="." onclick="user_input_point(this)">.</button>
+            <button class="btn btn-operator" id="equal-btn" onclick="calcular()">=</button>
+        </div>
+    </div>
+</body>
+</html>
