@@ -30,6 +30,11 @@ body{
 
 span{
     font-size: 38px;
+    width: 400px;
+    text-align: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #calculo{
