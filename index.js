@@ -33,6 +33,12 @@ function user_input_operator(element) {
     }
 }
 
+function user_input_minus(element) {
+    if (!(['%', '/', '*', '-', '+'].includes(input.textContent[input.textContent.length - 1]))) {
+        input.textContent += element.value
+    }
+}
+
 function user_input_point(element) {
     if (!(haspoint()) && !isNaN(input.textContent[input.textContent.length - 1])) {
         input.textContent += element.value;
@@ -53,10 +59,6 @@ function limpar() {
     result.textContent = "";
 }
 
-function mudar_sinal() {
-    if (input.textContent[0] == '-') {
-        input.textContent = input.textContent.replace('-', '')
-    } else {
-        input.textContent = '-' + input.textContent;
-    }
+function apagar_ultimo() {
+    input.textContent = input.textContent.slice(0, -1);
 }
