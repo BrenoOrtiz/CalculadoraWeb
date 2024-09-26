@@ -84,3 +84,11 @@ span{
 .btn-operator:hover{
     background: #336699;
 }
+
+@media (max-width: 500px){
+    
+    .all{
+        width: 350px;
+    }
+
+}
